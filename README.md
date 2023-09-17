@@ -20,4 +20,14 @@ Creation of an API connected to the two databases with the possibility of modify
 Dockerization of the project
 
 ### How to Run the project ?
-cd my_docker_image    
+In local, you can install Docker Desktop
+
+`cd my_docker_image`
+
+`docker image build . -t scraping_image:latest`
+
+`cd ../api_docker_image`
+
+`docker image build . -t api_image:latest`
+
+`docker-compose up`
